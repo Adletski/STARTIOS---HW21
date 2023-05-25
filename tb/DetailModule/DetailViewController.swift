@@ -36,13 +36,10 @@ class DetailViewController: UIViewController {
     }
     
     private func setupViews() {
+        let views = [cardImage,nameLabel,textLabel,manacostLabel,idLabel]
         view.backgroundColor = .white
         view.addSubview(stackView)
-        stackView.addArrangedSubview(cardImage)
-        stackView.addArrangedSubview(nameLabel)
-        stackView.addArrangedSubview(textLabel)
-        stackView.addArrangedSubview(manacostLabel)
-        stackView.addArrangedSubview(idLabel)
+        views.forEach { stackView.addArrangedSubview($0) }
     }
     
     private func setupConstraints() {
@@ -53,7 +50,4 @@ class DetailViewController: UIViewController {
             $0.bottom.equalTo(view.snp.bottom).offset(-30)
         }
     }
-    
-
-
 }
