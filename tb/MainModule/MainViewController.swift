@@ -47,17 +47,17 @@ class MainViewController: UIViewController {
         view.addSubview(textField)
         view.addSubview(button)
         
-        button.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide)
-            $0.leading.equalTo(textField.snp.trailing).offset(5)
-            $0.trailing.equalTo(view.snp.trailing).offset(-5)
-            $0.height.equalTo(40)
-        }
+//        button.snp.makeConstraints {
+//            $0.top.equalTo(view.safeAreaLayoutGuide)
+//            $0.leading.equalTo(textField.snp.trailing).offset(5)
+//            $0.trailing.equalTo(view.snp.trailing).offset(-5)
+//            $0.height.equalTo(40)
+//        }
         
         textField.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.leading.equalTo(view.snp.leading).offset(10)
-            $0.trailing.equalTo(view.snp.trailing).offset(-70)
+            $0.trailing.equalTo(view.snp.trailing).offset(-10)
             $0.height.equalTo(40)
         }
         
