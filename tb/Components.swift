@@ -18,6 +18,12 @@ extension UIViewController {
         return label
     }
     
+    func createButton() -> UIButton {
+        let button = UIButton()
+        
+        return button
+    }
+    
     func createCardImageView() -> UIImageView {
         let image = UIImageView()
         image.clipsToBounds = true

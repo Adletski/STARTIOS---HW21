@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Cards: Codable {
+class Cards: Codable {
     let cards: [Card]
 }
 
 // MARK: - Card
-struct Card: Codable {
-    let name: String
+class Card: Codable {
+    var name: String
     let manaCost: String
     let text: String
     let imageUrl: String?

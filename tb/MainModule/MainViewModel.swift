@@ -10,6 +10,8 @@ import Foundation
 class MainViewModel {
     
     var cards: [Card] = []
+    var filteredData: [Card] = []
+    var isFiltered = false
     
     
 }

@@ -51,7 +51,8 @@ struct NetworkManager {
                 completion(image)
                 return
             } else {
-                print("error")
+                guard let image = UIImage(systemName: "person") else { return }
+                completion(image)
             }
         }
     }
